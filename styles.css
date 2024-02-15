@@ -5,54 +5,52 @@
 }
 
 
-body{
+body {
   background-color: whitesmoke;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  font: 80px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  max-width: 550px;
+  min-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1{
-  width: 100%;
-  font-size: 80px;
-  font-weight: 200;
+header{
+  align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  width: 100%;
+  margin-top: 30px;  
   display: flex;
   color:#b83f45;    
 }
 
-.container{
-  justify-content: center;
+h1{
+  font-size: 80px;
+  font-weight: 200;
+}
+
+
+.main{
+  width: 100%;
+  text-align: center;
   display: flex;
-  color: #000;
-}
-
-
-.checkbox{
-  align-items: left;
+  background-color: transparent;
   
-
-
 }
 
-
-/*
-.container input.input-field {
+#todo-list{
   width: 100%;
-  font-size: 24px; 
-  font-family: inherit;
-  font-weight: inherit;
-  position: relative;
-  box-sizing: border-box;
-  margin: 0;
-  line-height: 1.4em;   
-  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.003);
+
 }
 
-.input-field input{
+#input-field{
   width: 100%;
-  height: 100px;
-  outline: none;
-  box-sizing: border-box
-
+  height: 64px;
+  padding: 16px;
+  font-size: 24px;
+  border: none;
+  box-shadow: inset 0 -2px 3px rgba(0,0,0,0.03);
 }
-*/
