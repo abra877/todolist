@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todolist</title>
   <link rel="stylesheet" href="styles.css">
 
-</head>
 <body>
   <header>
-    <h1>todos</h1>  
+    <h1>todos</h1>
   </header>
   <main class="main">
     <div id="todo-list">
-        <input type="text" id="input-field" placeholder="What needs to be done?">
-        <!--<p>&#x1F53D; nedåtpilen</p>-->
-        <!--<p>&#x274C; kryss</p>-->
+      <span id="down-arrow-icon">🔽</span>
+      <input type="text" id="input-field" placeholder="What needs to be done?">
     </div>
-  </main>   
+    <div id="input-container"></div>
+    <div class="counter">
+      <div id="input-count">
+        <p></p>
+      </div>
+      <div id="filter-buttons">
+        <button id="all">All</button>
+        <button id="active">Active</button>
+        <button id="completed">Completed</button>
+      </div>
+      <div id="clearbtn">
+        <button id="clear-completed">Clear Completed</button>
+      </div>
+    </div>
+  </main>
+  <footer class="text-templet">
+    <p>Double-click to edit a todo</p>
+    <p>Created by the TodoMVC Team</p>
+    <p>Part of TodoMVC</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
